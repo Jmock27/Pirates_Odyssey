@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=3 uid="uid://c2bd80edpawua"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_a73jn"]
+[ext_resource type="Shader" path="res://scroll.gdshader" id="2_3n4gx"]
+[ext_resource type="AudioStream" uid="uid://dgkoix1o0yrik" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 3.mp3" id="2_jwpmf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oerjn"]
+shader = ExtResource("2_3n4gx")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a66nh"]
+load_path = "res://.godot/imported/Preview_143.png-3593fc3152cd8b5d548bed1502f507ef.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hxxfj"]
+load_path = "res://.godot/imported/Pirates of Games (1).png-5468b204f1939dd245a29b21bede3214.ctex"
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a73jn")
+
+[node name="Preview143" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("ShaderMaterial_oerjn")
+position = Vector2(639.5, 358)
+scale = Vector2(0.879861, 1.10494)
+texture = SubResource("CompressedTexture2D_a66nh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -114.0
+offset_top = -283.0
+offset_right = 118.0
+offset_bottom = -125.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Start"
+expand_icon = true
+
+[node name="OptionsButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Exit"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -484.5
+offset_right = 484.5
+offset_bottom = 500.0
+grow_horizontal = 2
+texture = SubResource("CompressedTexture2D_hxxfj")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_jwpmf")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

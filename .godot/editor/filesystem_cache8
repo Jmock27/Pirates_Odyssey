@@ -1,0 +1,43 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1711754700
+game.gd::GDScript::-1::1711646209::0::1::::<>Control<>::
+game.tscn::PackedScene::6670246924963645904::1711753066::0::1::::<><>::res://game.gd<>uid://dgkoix1o0yrik::::res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 3.mp3
+icon.svg::CompressedTexture2D::5945105817301676180::1711644533::1711644561::1::::<><>::
+::res://Foozle_2DT0014_Scallywag_WaterAndIslands/::1711753448
+Mockup Island.png::CompressedTexture2D::3859294357532070759::1711753399::1711753399::1::::<><>::
+Readme.txt::TextFile::-1::1711753399::0::1::::<><>::
+Water and Island tiles.png::CompressedTexture2D::4695533018459013528::1711753399::1711753399::1::::<><>::
+::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/::1711753448
+::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/::1711753503
+Mockup Island.png::CompressedTexture2D::3030452271651864297::1711753448::1711753448::1::::<><>::
+Readme.txt::TextFile::-1::1711753448::0::1::::<><>::
+Water and Island tiles.png::CompressedTexture2D::4044167803636323593::1711753448::1711753448::1::::<><>::
+::res://Pirate Music Pack/::1711657930
+::res://Pirate Music Pack/Pirate Music Pack/::1711657931
+::res://Pirate Music Pack/Pirate Music Pack/mp3/::1711657932
+Pirate 1.mp3::AudioStreamMP3::2380066409151497778::1711657930::1711657932::1::::<><>::
+Pirate 2.mp3::AudioStreamMP3::8201720821768026970::1711657930::1711657932::1::::<><>::
+Pirate 3.mp3::AudioStreamMP3::7601904463570500590::1711657930::1711657932::1::::<><>::
+Pirate 4.mp3::AudioStreamMP3::6598823272773484684::1711657930::1711657932::1::::<><>::
+Pirate 5.mp3::AudioStreamMP3::536482285871504663::1711657930::1711657932::1::::<><>::
+Pirate 6.mp3::AudioStreamMP3::1173123426820499409::1711657930::1711657932::1::::<><>::
+Pirate 7.mp3::AudioStreamMP3::5523657476003305536::1711657930::1711657932::1::::<><>::
+Pirate 8.mp3::AudioStreamMP3::8137836236327546938::1711657931::1711657932::1::::<><>::
+::res://Pirate Music Pack/Pirate Music Pack/ogg/::1711657932
+Pirate 1.ogg::AudioStreamOggVorbis::2337375454763085302::1711657931::1711657932::1::::<><>::
+Pirate 2.ogg::AudioStreamOggVorbis::9207826122054978597::1711657931::1711657932::1::::<><>::
+Pirate 3.ogg::AudioStreamOggVorbis::1530257513555292260::1711657931::1711657932::1::::<><>::
+Pirate 4.ogg::AudioStreamOggVorbis::8094839677505226189::1711657931::1711657932::1::::<><>::
+Pirate 5.ogg::AudioStreamOggVorbis::3827110043106218671::1711657931::1711657932::1::::<><>::
+Pirate 6.ogg::AudioStreamOggVorbis::4912541140378240546::1711657931::1711657932::1::::<><>::
+Pirate 7.ogg::AudioStreamOggVorbis::8284080970615707553::1711657931::1711657932::1::::<><>::
+Pirate 8.ogg::AudioStreamOggVorbis::2944828583092214980::1711657931::1711657932::1::::<><>::
+::res://Pirate Music Pack/Pirate Music Pack/Wav/::1711657942
+Pirate 1.wav::AudioStreamWAV::8180186626696310274::1711657931::1711657940::1::::<><>::
+Pirate 2.wav::AudioStreamWAV::6599199020283377078::1711657931::1711657938::1::::<><>::
+Pirate 3.wav::AudioStreamWAV::2379927054404589379::1711657931::1711657942::1::::<><>::
+Pirate 4.wav::AudioStreamWAV::5087237823678477204::1711657931::1711657942::1::::<><>::
+Pirate 5.wav::AudioStreamWAV::2924706176110607::1711657931::1711657938::1::::<><>::
+Pirate 6.wav::AudioStreamWAV::2112459981258280065::1711657931::1711657942::1::::<><>::
+Pirate 7.wav::AudioStreamWAV::2624415623453743838::1711657931::1711657940::1::::<><>::
+Pirate 8.wav::AudioStreamWAV::3261721149422274935::1711657931::1711657941::1::::<><>::

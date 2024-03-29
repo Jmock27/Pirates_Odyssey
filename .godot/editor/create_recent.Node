@@ -1,0 +1,12 @@
+AnimatedSprite2D
+AudioStreamPlayer2D
+TextureButton
+TextureRect
+ColorRect
+Sprite2D
+ParallaxBackground
+Label
+TextEdit
+Button
+VBoxContainer
+Control

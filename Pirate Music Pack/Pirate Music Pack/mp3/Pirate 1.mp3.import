@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://856l1ah5rkb7"
+path="res://.godot/imported/Pirate 1.mp3-e68b078f7a7cad5bab9f1b258341c1d0.mp3str"
+
+[deps]
+
+source_file="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 1.mp3"
+dest_files=["res://.godot/imported/Pirate 1.mp3-e68b078f7a7cad5bab9f1b258341c1d0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
