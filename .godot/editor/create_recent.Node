@@ -1,6 +1,6 @@
-TileMap
-AnimatedSprite2D
 AnimationPlayer
+AnimatedSprite2D
+TileMap
 Sprite2D
 AudioStreamPlayer2D
 TextureButton
