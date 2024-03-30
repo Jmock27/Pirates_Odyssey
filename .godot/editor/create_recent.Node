@@ -1,5 +1,7 @@
-Sprite2D
+TileMap
 AnimatedSprite2D
+AnimationPlayer
+Sprite2D
 AudioStreamPlayer2D
 TextureButton
 TextureRect
