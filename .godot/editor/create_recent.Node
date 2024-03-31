@@ -1,5 +1,7 @@
-AnimationPlayer
+CollisionShape2D
 AnimatedSprite2D
+Area2D
+AnimationPlayer
 TileMap
 Sprite2D
 AudioStreamPlayer2D
@@ -11,4 +13,3 @@ Label
 TextEdit
 Button
 VBoxContainer
-Control
