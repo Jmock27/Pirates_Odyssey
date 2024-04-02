@@ -1,9 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711765072
+::res://::1712083494
+character_body_2d.tscn::PackedScene::7633523896768783854::1712082336::0::1::::<><>::uid://bi07hyqipkpm2::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://h0xp42rnuqex::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://dc73d7beylvtv::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png
 game.gd::GDScript::-1::1711646209::0::1::::<>Control<>::
-game.tscn::PackedScene::6670246924963645904::1711765072::0::1::::<><>::res://game.gd<>res://scroll.gdshader<>uid://dgkoix1o0yrik::::res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 3.mp3
+game.tscn::PackedScene::6670246924963645904::1712082334::0::1::::<><>::res://game.gd<>res://scroll.gdshader<>uid://dgkoix1o0yrik::::res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 3.mp3
+game_map.tscn::PackedScene::8239518181864298535::1712082336::0::1::::<><>::uid://bxva386a8hq3j::::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Water and Island tiles.png<>uid://d0xcaoia27tps::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Ships Mockup.png
 icon.svg::CompressedTexture2D::5945105817301676180::1711644533::1711644561::1::::<><>::
-scroll.gdshader::Shader::-1::1711765072::0::1::::<><>::
+island_1.tscn::PackedScene::1957146816010868072::1711841004::0::1::::<><>::
+island_exploration.tscn::PackedScene::5367558678653881323::1712082336::0::1::::<><>::
+scroll.gdshader::Shader::-1::1712082336::0::1::::<><>::
+::res://Boat-animation.png.png/::1712083592
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png::CompressedTexture2D::97230779283566057::1712083494::1712083495::1::::<><>::
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png::CompressedTexture2D::9054860826778811232::1712083494::1712083495::1::::<><>::
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png::CompressedTexture2D::7011027973215369949::1712083494::1712083495::1::::<><>::
+::res://Boat-animation.png.png/Boat-animation.png.png/::1712083636
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png::CompressedTexture2D::8388957655941372241::1712083592::1712083592::1::::<><>::
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png::CompressedTexture2D::4842802910203805765::1712083592::1712083592::1::::<><>::
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png::CompressedTexture2D::2643740014591653526::1712083592::1712083592::1::::<><>::
+::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/::1712083636
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png::CompressedTexture2D::2334649840053366768::1712083636::1712083637::1::::<><>::
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png::CompressedTexture2D::7199025305896031546::1712083636::1712083637::1::::<><>::
+7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png::CompressedTexture2D::9144624008896366097::1712083636::1712083637::1::::<><>::
 ::res://Foozle_2DT0013_Scallywag_Ships/::1711650166
 ::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/::1711814801
 Readme.txt::TextFile::-1::1711650166::0::1::::<><>::
@@ -27,7 +43,7 @@ Readme.txt::TextFile::-1::1711753448::0::1::::<><>::
 Water and Island tiles.png::CompressedTexture2D::4044167803636323593::1711753448::1711753448::1::::<><>::
 ::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0013_Scallywag_Ships/::1711762145
 ::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/::1711762151
-Readme.txt::TextFile::-1::1711762145::0::1::::<><>::
+Readme.txt::TextFile::-1::1711762151::0::1::::<><>::
 ::res://Pirate Music Pack/::1711657930
 ::res://Pirate Music Pack/Pirate Music Pack/::1711657931
 ::res://Pirate Music Pack/Pirate Music Pack/mp3/::1711657932

@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://dg00a17dkc7c1"]
+
+[ext_resource type="Texture2D" uid="uid://bi07hyqipkpm2" path="res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png" id="1_fv5ab"]
+[ext_resource type="Texture2D" uid="uid://h0xp42rnuqex" path="res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png" id="2_6ru2l"]
+[ext_resource type="Texture2D" uid="uid://dc73d7beylvtv" path="res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png" id="3_5aq0n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxilf"]
+atlas = ExtResource("1_fv5ab")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_st7qe"]
+atlas = ExtResource("2_6ru2l")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6vfb"]
+atlas = ExtResource("3_5aq0n")
+region = Rect2(0, 0, 640, 640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bvifp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxilf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_st7qe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6vfb")
+}],
+"loop": true,
+"name": &"MoveDown",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"MoveLeft",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"MoveRight",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"MoveUp",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(596, 227)
+scale = Vector2(0.667969, 0.615625)
+sprite_frames = SubResource("SpriteFrames_bvifp")
+animation = &"MoveDown"
+frame_progress = 0.445713
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
