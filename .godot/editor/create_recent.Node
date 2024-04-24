@@ -1,3 +1,4 @@
+Camera2D
 Control
 LineEdit
 PanelContainer
@@ -11,4 +12,3 @@ CharacterBody2D
 AnimationPlayer
 TileMap
 AudioStreamPlayer2D
-TextureButton

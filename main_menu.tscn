@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://c2bd80edpawua"]
 
-[ext_resource type="Script" path="res://game.gd" id="1_a73jn"]
-[ext_resource type="Shader" path="res://scroll.gdshader" id="2_3n4gx"]
-[ext_resource type="AudioStream" uid="uid://dgkoix1o0yrik" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 3.mp3" id="2_jwpmf"]
+[ext_resource type="Script" path="res://main_menu_script.gd" id="1_jwp7b"]
+[ext_resource type="Shader" path="res://scroll.gdshader" id="2_tpbqc"]
+[ext_resource type="AudioStream" uid="uid://dgkoix1o0yrik" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 3.mp3" id="3_ab7nj"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oerjn"]
-shader = ExtResource("2_3n4gx")
+shader = ExtResource("2_tpbqc")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a66nh"]
 load_path = "res://.godot/imported/Preview_143.png-3593fc3152cd8b5d548bed1502f507ef.ctex"
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_a73jn")
+script = ExtResource("1_jwp7b")
 
 [node name="Preview143" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -72,7 +72,7 @@ grow_horizontal = 2
 texture = SubResource("CompressedTexture2D_hxxfj")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_jwpmf")
+stream = ExtResource("3_ab7nj")
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
