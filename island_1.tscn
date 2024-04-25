@@ -1,7 +1,23 @@
-[gd_scene format=3 uid="uid://25b6l75dsiyy"]
+[gd_scene load_steps=3 format=3 uid="uid://25b6l75dsiyy"]
+
+[ext_resource type="Script" path="res://island_1.gd" id="1_6urrm"]
+[ext_resource type="PackedScene" uid="uid://ciqc530wqxee2" path="res://island_exploration.tscn" id="2_i61lg"]
 
 [node name="Island 1" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_6urrm")
+
+[node name="IslandExploration" parent="." instance=ExtResource("2_i61lg")]
+layout_direction = 3
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -1240.0
+offset_right = 40.0
+offset_bottom = 720.0
+grow_horizontal = 1
+grow_vertical = 1

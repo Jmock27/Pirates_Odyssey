@@ -1,11 +1,2 @@
-res://game.tscn
-res://scroll.gdshader
-res://game_map.tscn
-res://character_body_2d.tscn
-res://island_exploration.tscn
-res://game.gd
-res://playerscript.gd
-res://main_menu.tscn
-res://player_ship.tscn
 res://island_1.tscn
-res://main_menu_script.gd
+res://scroll.gdshader
