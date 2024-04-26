@@ -1,14 +1,14 @@
+CollisionShape2D
+CharacterBody2D
+Node2D
 AnimatedSprite2D
 Sprite2D
 ParallaxBackground
 TileMap
-CollisionShape2D
 StaticBody2D
 Area2D
-CharacterBody2D
 CollisionPolygon2D
 Camera2D
-Node2D
 ParallaxLayer
 Control
 LineEdit

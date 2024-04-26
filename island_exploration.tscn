@@ -1,17 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://ciqc530wqxee2"]
+[gd_scene load_steps=6 format=3 uid="uid://ciqc530wqxee2"]
 
+[ext_resource type="Script" path="res://island_exploration.gd" id="1_gjugc"]
 [ext_resource type="Shader" path="res://scroll.gdshader" id="1_xgmst"]
 [ext_resource type="Texture2D" uid="uid://ccpecucwrmy8r" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/island background.jpg" id="2_1o7gt"]
 [ext_resource type="PackedScene" uid="uid://cc3wxdyv68f0r" path="res://pirate.tscn" id="3_2aev6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_noux0"]
 shader = ExtResource("1_xgmst")
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_37owp"]
-bg_color = Color(0.329412, 0.443137, 0.611765, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_60cef"]
-bg_color = Color(0.427451, 0.678431, 0.756863, 1)
 
 [node name="IslandExploration" type="Control"]
 layout_mode = 3
@@ -20,16 +15,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gjugc")
 
-[node name="Background" type="PanelContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="IslandBackground" type="Sprite2D" parent="Background"]
+[node name="IslandBackground" type="Sprite2D" parent="."]
 texture_filter = 1
 texture_repeat = 2
 material = SubResource("ShaderMaterial_noux0")
@@ -37,33 +25,5 @@ position = Vector2(1256.3, 156.5)
 scale = Vector2(1.30697, 0.443965)
 texture = ExtResource("2_1o7gt")
 
-[node name="Pirate" parent="Background" instance=ExtResource("3_2aev6")]
+[node name="Pirate" parent="." instance=ExtResource("3_2aev6")]
 position = Vector2(70, 279)
-autoplay = "run"
-frame_progress = 0.0
-
-[node name="MarginContainer" type="MarginContainer" parent="Background"]
-layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
-
-[node name="Rows" type="VBoxContainer" parent="Background/MarginContainer"]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="Info" type="PanelContainer" parent="Background/MarginContainer/Rows"]
-custom_minimum_size = Vector2(300, 500)
-layout_direction = 1
-layout_mode = 2
-size_flags_vertical = 10
-theme_override_styles/panel = SubResource("StyleBoxFlat_37owp")
-
-[node name="InputArea" type="PanelContainer" parent="Background/MarginContainer/Rows"]
-custom_minimum_size = Vector2(30, 75)
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_60cef")
-
-[node name="Input" type="LineEdit" parent="Background/MarginContainer/Rows/InputArea"]
-layout_mode = 2

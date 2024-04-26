@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://cc3wxdyv68f0r"]
+[gd_scene load_steps=11 format=3 uid="uid://cc3wxdyv68f0r"]
 
+[ext_resource type="Script" path="res://pirate.gd" id="1_7f05b"]
 [ext_resource type="Texture2D" uid="uid://dbou0iok4b5q4" path="res://Run-6frm.png" id="1_wwnw4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_im4ll"]
@@ -52,8 +53,19 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6frq5"]
+radius = 8.0
+height = 22.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_7f05b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(509, 170)
 sprite_frames = SubResource("SpriteFrames_qyk5b")
 animation = &"run"
 frame_progress = 0.463273
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(510, 176)
+shape = SubResource("CapsuleShape2D_6frq5")

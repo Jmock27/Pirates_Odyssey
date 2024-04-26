@@ -1,6 +1,6 @@
-res://gameMenu.tscn
-res://scroll.gdshader
 res://gameLevel.tscn
+res://scroll.gdshader
+res://player.tscn
 res://island_exploration.tscn
 res://island_1.tscn
 res://island_2.tscn
@@ -8,5 +8,4 @@ res://island_3.tscn
 res://island_4.tscn
 res://island_5.tscn
 res://pirate.tscn
-res://player.tscn
 res://rock.tscn
