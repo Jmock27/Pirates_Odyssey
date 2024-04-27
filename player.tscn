@@ -5,16 +5,16 @@
 [sub_resource type="GDScript" id="GDScript_niv5a"]
 script/source = "extends CharacterBody2D
 
-var speed = 200
+var speed = 350
 
 func _process(delta):
-	if Input.is_action_pressed(\"left\"):
+	look_at(get_global_mouse_position())
+	if Input.is_action_pressed(\"left click\"):
 		var target_position = get_global_mouse_position()
 		var direction = (target_position - global_position).normalized()
 		velocity = direction * speed
 	else:
 		velocity = Vector2.ZERO
-
 	move_and_slide()
 "
 

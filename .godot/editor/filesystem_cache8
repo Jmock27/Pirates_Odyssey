@@ -1,28 +1,28 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714081537
-gameLevel.tscn::PackedScene::8239518181864298535::1714077721::0::1::::<><>::uid://bxva386a8hq3j::::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Water and Island tiles.png<>uid://d0xcaoia27tps::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Ships Mockup.png<>uid://dp37aqsnk0y7g::::res://player.tscn<>uid://25b6l75dsiyy::::res://island_1.tscn<>uid://d4cxgom0dx3nd::::res://island_2.tscn<>uid://bscmf4l3jboys::::res://island_3.tscn<>uid://biy1epts6xytp::::res://island_4.tscn<>uid://bn0pv7u5sbbar::::res://island_5.tscn<>uid://bf8oxh3iud11r::::res://rock.tscn
+::res://::1714253664
+gameLevel.tscn::PackedScene::8239518181864298535::1714082384::0::1::::<><>::uid://bxva386a8hq3j::::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Water and Island tiles.png<>uid://d0xcaoia27tps::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Ships Mockup.png<>uid://dp37aqsnk0y7g::::res://player.tscn<>uid://25b6l75dsiyy::::res://island_1.tscn<>uid://d4cxgom0dx3nd::::res://island_2.tscn<>uid://bscmf4l3jboys::::res://island_3.tscn<>uid://biy1epts6xytp::::res://island_4.tscn<>uid://bn0pv7u5sbbar::::res://island_5.tscn<>uid://bf8oxh3iud11r::::res://rock.tscn
 gameMenu.tscn::PackedScene::6670246924963645904::1714068713::0::1::::<><>::
 game_map.gd::GDScript::-1::1714068713::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::5945105817301676180::1711852634::1714068742::1::::<><>::
 island_1.gd::GDScript::-1::1714068713::0::1::::<>StaticBody2D<>::
-island_1.tscn::PackedScene::1957146816010868072::1714077722::0::1::::<><>::res://island_1.gd<>uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_2.tscn::PackedScene::9200275232692806325::1714077722::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_3.tscn::PackedScene::3654687699022803538::1714077723::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_4.tscn::PackedScene::2999063101944074909::1714077723::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_5.tscn::PackedScene::3351435064432966397::1714077724::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_1.tscn::PackedScene::1957146816010868072::1714082385::0::1::::<><>::res://island_1.gd<>uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_2.tscn::PackedScene::9200275232692806325::1714082385::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_3.tscn::PackedScene::3654687699022803538::1714082386::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_4.tscn::PackedScene::2999063101944074909::1714082386::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_5.tscn::PackedScene::3351435064432966397::1714082386::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
 island_exploration.gd::GDScript::-1::1714070619::0::1::::<>Control<>::
-island_exploration.tscn::PackedScene::5367558678653881323::1714077722::0::1::::<><>::res://island_exploration.gd<>res://scroll.gdshader<>uid://ccpecucwrmy8r::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/island background.jpg<>uid://cc3wxdyv68f0r::::res://pirate.tscn
+island_exploration.tscn::PackedScene::5367558678653881323::1714082385::0::1::::<><>::res://island_exploration.gd<>res://scroll.gdshader<>uid://ccpecucwrmy8r::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/island background.jpg<>uid://cc3wxdyv68f0r::::res://pirate.tscn
 main_menu.tscn::PackedScene::6670246924963645904::1714068713::0::1::::<><>::
 main_menu_script.gd::GDScript::-1::1714068713::0::1::::<>Control<>::
 pirate.gd::GDScript::-1::1714077854::0::1::::<>Node2D<>::
-pirate.tscn::PackedScene::4972398674518845839::1714077724::0::1::::<><>::res://pirate.gd<>uid://dbou0iok4b5q4::::res://Run-6frm.png
+pirate.tscn::PackedScene::4972398674518845839::1714082386::0::1::::<><>::res://pirate.gd<>uid://dbou0iok4b5q4::::res://Run-6frm.png
 Player.gd::GDScript::-1::1714068713::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::8271841095317106606::1714077724::0::1::::<><>::uid://v6hdv86lbk5d::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png
+player.tscn::PackedScene::8271841095317106606::1714082386::0::1::::<><>::uid://v6hdv86lbk5d::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png
 playerscript.gd::GDScript::-1::1713937815::0::1::::<>CharacterBody2D<>::
 player_ship.tscn::PackedScene::7633523896768783854::1713937815::0::1::::<><>::res://playerscript.gd<>uid://bi07hyqipkpm2::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://h0xp42rnuqex::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://dc73d7beylvtv::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png<>uid://bndm2q72gujh::::res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://c65guu80jfoan::::res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png<>uid://d2aih8r6yjmce::::res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://8i6lvc5ksi4g::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://dati5ou8f7nig::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://d3jyveky1o1ij::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png<>uid://drrw53o2w7l8d::::res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://ca85iyndpeyyf::::res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://bdwwanvg23887::::res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png
-rock.tscn::PackedScene::2806380890234112325::1714077724::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+rock.tscn::PackedScene::2806380890234112325::1714082387::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
 Run-6frm.png::CompressedTexture2D::7259611610284369613::1714068713::1714068713::1::::<><>::
-scroll.gdshader::Shader::-1::1714077855::0::1::::<><>::
+scroll.gdshader::Shader::-1::1714082515::0::1::::<><>::
 ::res://Boat-animation.png.png/::1712792029
 7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png::CompressedTexture2D::97230779283566057::1712792029::1712792029::1::::<><>::
 7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png::CompressedTexture2D::9054860826778811232::1712792029::1712792029::1::::<><>::

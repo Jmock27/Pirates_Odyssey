@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=3 uid="uid://ciqc530wqxee2"]
+[gd_scene load_steps=5 format=3 uid="uid://ciqc530wqxee2"]
 
-[ext_resource type="Script" path="res://island_exploration.gd" id="1_gjugc"]
 [ext_resource type="Shader" path="res://scroll.gdshader" id="1_xgmst"]
 [ext_resource type="Texture2D" uid="uid://ccpecucwrmy8r" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/island background.jpg" id="2_1o7gt"]
 [ext_resource type="PackedScene" uid="uid://cc3wxdyv68f0r" path="res://pirate.tscn" id="3_2aev6"]
@@ -8,14 +7,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_noux0"]
 shader = ExtResource("1_xgmst")
 
-[node name="IslandExploration" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_gjugc")
+[node name="island_exploration" type="Node2D"]
 
 [node name="IslandBackground" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -26,4 +18,5 @@ scale = Vector2(1.30697, 0.443965)
 texture = ExtResource("2_1o7gt")
 
 [node name="Pirate" parent="." instance=ExtResource("3_2aev6")]
-position = Vector2(70, 279)
+position = Vector2(-636, 213)
+scale = Vector2(1.30697, 0.443965)
