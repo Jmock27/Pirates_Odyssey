@@ -1,5 +1,11 @@
-res://character_body_2d.tscn
+res://gameLevel.tscn
 res://scroll.gdshader
-res://game.tscn
-res://game_map.tscn
+res://player.tscn
 res://island_exploration.tscn
+res://island_1.tscn
+res://island_2.tscn
+res://island_3.tscn
+res://island_4.tscn
+res://island_5.tscn
+res://pirate.tscn
+res://rock.tscn

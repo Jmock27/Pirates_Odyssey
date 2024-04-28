@@ -1,12 +1,51 @@
-[gd_scene load_steps=2 format=3 uid="uid://dp37aqsnk0y7g"]
+[gd_scene load_steps=5 format=3 uid="uid://dp37aqsnk0y7g"]
 
-[ext_resource type="Script" path="res://Player.gd" id="1_377pm"]
+[ext_resource type="Texture2D" uid="uid://v6hdv86lbk5d" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png" id="3_cyy6f"]
 
-[node name="Player" type="Area2D"]
-position = Vector2(80, 46)
-script = ExtResource("1_377pm")
-metadata/_edit_group_ = true
+[sub_resource type="GDScript" id="GDScript_niv5a"]
+script/source = "extends CharacterBody2D
+
+var speed = 350
+
+func _process(delta):
+	look_at(get_global_mouse_position())
+	if Input.is_action_pressed(\"left click\"):
+		var target_position = get_global_mouse_position()
+		var direction = (target_position - global_position).normalized()
+		velocity = direction * speed
+	else:
+		velocity = Vector2.ZERO
+	move_and_slide()
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f1ani"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cyy6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cyy6f")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bndtc"]
+radius = 61.0
+height = 122.0
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(445, 226)
+script = SubResource("GDScript_niv5a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4.5, 1)
+sprite_frames = SubResource("SpriteFrames_f1ani")
+animation = &"right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0.5, -1)
+shape = SubResource("CapsuleShape2D_bndtc")
