@@ -1,18 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://dp37aqsnk0y7g"]
+[gd_scene load_steps=7 format=3 uid="uid://dp37aqsnk0y7g"]
 
+[ext_resource type="AudioStream" uid="uid://rllv80wln2m" path="res://SFX/Boat-Idle-SFX.wav" id="2_7k0op"]
 [ext_resource type="Texture2D" uid="uid://v6hdv86lbk5d" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png" id="3_cyy6f"]
+[ext_resource type="AudioStream" uid="uid://c2kf1ppil0m2c" path="res://SFX/Boat-Moving-SFX.wav" id="3_eoojm"]
 
 [sub_resource type="GDScript" id="GDScript_niv5a"]
 script/source = "extends CharacterBody2D
+var speed = 350
+var moving = false
 
-@export var speed = 400
+func _ready():
+	$BoatIdle.play()
 
-func get_input():
+func _process(_delta):
 	look_at(get_global_mouse_position())
-	velocity = transform.x * Input.get_axis(\"down\", \"up\") * speed
-
-func _physics_process(delta):
-	get_input()
+	if Input.is_action_pressed(\"left click\"):
+		var target_position = get_global_mouse_position()
+		var direction = (target_position - global_position).normalized()
+		velocity = direction * speed
+	else:
+		velocity = Vector2.ZERO
+	
 	move_and_slide()
 "
 
@@ -47,3 +55,13 @@ animation = &"right"
 visible = false
 position = Vector2(0.5, -1)
 shape = SubResource("CapsuleShape2D_bndtc")
+
+[node name="BoatIdle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_7k0op")
+volume_db = -30.045
+pitch_scale = 0.75
+
+[node name="BoatMoving" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_eoojm")
+volume_db = -27.414
+pitch_scale = 0.75
