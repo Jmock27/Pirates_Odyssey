@@ -1,6 +1,5 @@
-res://gameMenu.tscn
-res://scroll.gdshader
 res://gameLevel.tscn
+res://scroll.gdshader
 res://island_exploration.tscn
 res://island_1.tscn
 res://island_2.tscn
