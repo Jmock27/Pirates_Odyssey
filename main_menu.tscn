@@ -1,47 +1,22 @@
 [gd_scene load_steps=7 format=3 uid="uid://c2bd80edpawua"]
 
-<<<<<<<< HEAD:gameMenu.tscn
-[ext_resource type="Script" path="res://game.gd" id="1_0mpnv"]
-[ext_resource type="Shader" path="res://scroll.gdshader" id="2_742vj"]
-[ext_resource type="AudioStream" uid="uid://dgkoix1o0yrik" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 3.mp3" id="3_v35tt"]
+[ext_resource type="Shader" path="res://scroll.gdshader" id="1_u06ka"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_ymla5"]
+[ext_resource type="Texture2D" uid="uid://cslychic4lkp1" path="res://Sunny-land-assets-files/PNG/environment/layers/back.png" id="2_oke10"]
+[ext_resource type="AudioStream" uid="uid://do38e5b7e25h3" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 2.mp3" id="3_ayrq2"]
+[ext_resource type="Texture2D" uid="uid://bg22innu3es3d" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirates Odyssey (1).png" id="4_fs8r5"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_oerjn"]
-shader = ExtResource("2_742vj")
-========
-[ext_resource type="Script" path="res://main_menu_script.gd" id="1_jwp7b"]
-[ext_resource type="Shader" path="res://scroll.gdshader" id="2_tpbqc"]
-[ext_resource type="AudioStream" uid="uid://dgkoix1o0yrik" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 3.mp3" id="3_ab7nj"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uen7x"]
+shader = ExtResource("1_u06ka")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_oerjn"]
-shader = ExtResource("2_tpbqc")
->>>>>>>> c4bbdbeba30a3cb2290a2666cf7921903863fb41:main_menu.tscn
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a66nh"]
-load_path = "res://.godot/imported/Preview_143.png-3593fc3152cd8b5d548bed1502f507ef.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hxxfj"]
-load_path = "res://.godot/imported/Pirates of Games (1).png-5468b204f1939dd245a29b21bede3214.ctex"
-
-[node name="Menu" type="Control"]
+[node name="Main Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-<<<<<<<< HEAD:gameMenu.tscn
-script = ExtResource("1_0mpnv")
-========
-script = ExtResource("1_jwp7b")
->>>>>>>> c4bbdbeba30a3cb2290a2666cf7921903863fb41:main_menu.tscn
-
-[node name="Preview143" type="Sprite2D" parent="."]
-texture_filter = 1
-texture_repeat = 2
-material = SubResource("ShaderMaterial_oerjn")
-position = Vector2(639.5, 358)
-scale = Vector2(0.879861, 1.10494)
-texture = SubResource("CompressedTexture2D_a66nh")
+script = ExtResource("1_ymla5")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -50,43 +25,38 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -114.0
-offset_top = -283.0
-offset_right = 118.0
-offset_bottom = -125.0
+offset_left = -210.0
+offset_top = -159.0
+offset_right = 195.0
 grow_horizontal = 2
 grow_vertical = 0
-alignment = 1
 
-[node name="StartButton" type="Button" parent="VBoxContainer"]
+[node name="start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
 text = "Start"
-expand_icon = true
 
-[node name="ExitButton" type="Button" parent="VBoxContainer"]
+[node name="quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "Exit"
+text = "Quit"
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Back" type="Sprite2D" parent="."]
+z_index = -1
 texture_filter = 1
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -484.5
-offset_right = 484.5
-offset_bottom = 500.0
-grow_horizontal = 2
-texture = SubResource("CompressedTexture2D_hxxfj")
+texture_repeat = 2
+material = SubResource("ShaderMaterial_uen7x")
+position = Vector2(639.5, 362)
+scale = Vector2(3.32552, 2.98333)
+texture = ExtResource("2_oke10")
 
-[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
-<<<<<<<< HEAD:gameMenu.tscn
-stream = ExtResource("3_v35tt")
-========
-stream = ExtResource("3_ab7nj")
->>>>>>>> c4bbdbeba30a3cb2290a2666cf7921903863fb41:main_menu.tscn
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ayrq2")
 autoplay = true
 
-[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
+[node name="PiratesOdyssey(1)" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(635, 251)
+scale = Vector2(1.99, 1.404)
+texture = ExtResource("4_fs8r5")
+
+[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
