@@ -1,6 +1,7 @@
 res://gameLevel.tscn
 res://scroll.gdshader
 res://player.tscn
+res://game_map.gd
 res://island_exploration.tscn
 res://island_1.tscn
 res://island_2.tscn
