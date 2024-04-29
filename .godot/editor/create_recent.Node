@@ -1,3 +1,7 @@
+Area2D
+ColorRect
+AnimationPlayer
+AnimationTree
 Camera2D
 TileMap
 StaticBody2D
@@ -8,8 +12,3 @@ MarginContainer
 Control
 AnimatedSprite2D
 Sprite2D
-ParallaxBackground
-CollisionShape2D
-Area2D
-CharacterBody2D
-CollisionPolygon2D

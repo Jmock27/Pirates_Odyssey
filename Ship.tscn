@@ -1,105 +1,67 @@
-[gd_scene load_steps=19 format=3 uid="uid://dg00a17dkc7c1"]
+[gd_scene load_steps=7 format=3 uid="uid://dp37aqsnk0y7g"]
 
-[ext_resource type="Script" path="res://playerscript.gd" id="1_6yg54"]
-[ext_resource type="Texture2D" uid="uid://bi07hyqipkpm2" path="res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png" id="1_fv5ab"]
-[ext_resource type="Texture2D" uid="uid://h0xp42rnuqex" path="res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png" id="2_6ru2l"]
-[ext_resource type="Texture2D" uid="uid://dc73d7beylvtv" path="res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png" id="3_5aq0n"]
-[ext_resource type="Texture2D" uid="uid://bndm2q72gujh" path="res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png" id="4_d2dmt"]
-[ext_resource type="Texture2D" uid="uid://c65guu80jfoan" path="res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png" id="5_n21wr"]
-[ext_resource type="Texture2D" uid="uid://d2aih8r6yjmce" path="res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png" id="6_ersvj"]
-[ext_resource type="Texture2D" uid="uid://8i6lvc5ksi4g" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png" id="7_g5er1"]
-[ext_resource type="Texture2D" uid="uid://dati5ou8f7nig" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png" id="8_j64es"]
-[ext_resource type="Texture2D" uid="uid://d3jyveky1o1ij" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png" id="9_ydr7e"]
-[ext_resource type="Texture2D" uid="uid://drrw53o2w7l8d" path="res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png" id="10_ggf04"]
-[ext_resource type="Texture2D" uid="uid://ca85iyndpeyyf" path="res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png" id="11_l7q5v"]
-[ext_resource type="Texture2D" uid="uid://bdwwanvg23887" path="res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png" id="12_tbdj2"]
+[ext_resource type="AudioStream" uid="uid://rllv80wln2m" path="res://SFX/Boat-Idle-SFX.wav" id="2_7k0op"]
+[ext_resource type="Texture2D" uid="uid://v6hdv86lbk5d" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png" id="3_cyy6f"]
+[ext_resource type="AudioStream" uid="uid://c2kf1ppil0m2c" path="res://SFX/Boat-Moving-SFX.wav" id="3_eoojm"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nxilf"]
-atlas = ExtResource("1_fv5ab")
-region = Rect2(0, 0, 640, 640)
+[sub_resource type="GDScript" id="GDScript_niv5a"]
+script/source = "extends CharacterBody2D
+var speed = 350
+var moving = false
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_st7qe"]
-atlas = ExtResource("2_6ru2l")
-region = Rect2(0, 0, 640, 640)
+func _ready():
+	$BoatIdle.play()
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x6vfb"]
-atlas = ExtResource("3_5aq0n")
-region = Rect2(0, 0, 640, 640)
+func _process(_delta):
+	look_at(get_global_mouse_position())
+	if Input.is_action_pressed(\"left click\"):
+		var target_position = get_global_mouse_position()
+		var direction = (target_position - global_position).normalized()
+		velocity = direction * speed
+	else:
+		velocity = Vector2.ZERO
+	
+	move_and_slide()
+"
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_bvifp"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_f1ani"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nxilf")
+"texture": ExtResource("3_cyy6f")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_st7qe")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x6vfb")
+"texture": ExtResource("3_cyy6f")
 }],
 "loop": true,
-"name": &"MoveDown",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_d2dmt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_n21wr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_ersvj")
-}],
-"loop": true,
-"name": &"MoveLeft",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_g5er1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_j64es")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_ydr7e")
-}],
-"loop": true,
-"name": &"MoveRight",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("10_ggf04")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_l7q5v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_tbdj2")
-}],
-"loop": true,
-"name": &"MoveUp",
+"name": &"right",
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uj5r4"]
-radius = 81.0
-height = 336.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bndtc"]
+radius = 61.0
+height = 122.0
 
-[node name="Player" type="CharacterBody2D"]
-position = Vector2(65, 95)
-script = ExtResource("1_6yg54")
+[node name="Ship" type="CharacterBody2D"]
+position = Vector2(445, 226)
+script = SubResource("GDScript_niv5a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(596, 227)
-scale = Vector2(0.667969, 0.615625)
-sprite_frames = SubResource("SpriteFrames_bvifp")
-animation = &"MoveUp"
+position = Vector2(4.5, 1)
+sprite_frames = SubResource("SpriteFrames_f1ani")
+animation = &"right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(596, 227)
-shape = SubResource("CapsuleShape2D_uj5r4")
+visible = false
+position = Vector2(0.5, -1)
+shape = SubResource("CapsuleShape2D_bndtc")
+
+[node name="BoatIdle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_7k0op")
+volume_db = -30.045
+pitch_scale = 0.75
+
+[node name="BoatMoving" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_eoojm")
+volume_db = -7.604
+pitch_scale = 0.75

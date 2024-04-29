@@ -1474,7 +1474,7 @@ sources/0 = SubResource("TileSetAtlasSource_44oug")
 radius = 287.0
 height = 574.0
 
-[node name="Island 2" type="StaticBody2D"]
+[node name="Island 2" type="Area2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_8tlsd")

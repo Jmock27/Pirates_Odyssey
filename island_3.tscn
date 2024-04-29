@@ -1473,7 +1473,7 @@ sources/0 = SubResource("TileSetAtlasSource_65rpi")
 [sub_resource type="CircleShape2D" id="CircleShape2D_uci0j"]
 radius = 351.241
 
-[node name="island 3" type="StaticBody2D"]
+[node name="island 3" type="Area2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_oqwq1")
