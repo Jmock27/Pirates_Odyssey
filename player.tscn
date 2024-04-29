@@ -63,5 +63,5 @@ pitch_scale = 0.75
 
 [node name="BoatMoving" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_eoojm")
-volume_db = -27.414
+volume_db = -7.604
 pitch_scale = 0.75
