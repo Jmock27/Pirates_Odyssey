@@ -42,7 +42,7 @@ animations = [{
 radius = 61.0
 height = 122.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Ship" type="CharacterBody2D"]
 position = Vector2(445, 226)
 script = SubResource("GDScript_niv5a")
 

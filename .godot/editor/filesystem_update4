@@ -1,6 +1,2 @@
-res://scroll.gdshader
-res://main_menu.tscn
-res://gameLevel.tscn
-res://pirate.tscn
 res://player.tscn
-res://pirate_exploration.tscn
+res://scroll.gdshader
