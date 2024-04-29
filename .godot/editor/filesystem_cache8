@@ -1,25 +1,27 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714068387
-gameLevel.tscn::PackedScene::8239518181864298535::1714068382::0::1::::<><>::uid://bxva386a8hq3j::::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Water and Island tiles.png<>uid://d0xcaoia27tps::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Ships Mockup.png<>uid://dp37aqsnk0y7g::::res://player.tscn<>uid://25b6l75dsiyy::::res://island_1.tscn<>uid://d4cxgom0dx3nd::::res://island_2.tscn<>uid://bscmf4l3jboys::::res://island_3.tscn<>uid://biy1epts6xytp::::res://island_4.tscn<>uid://bn0pv7u5sbbar::::res://island_5.tscn<>uid://bf8oxh3iud11r::::res://rock.tscn
-gameMenu.tscn::PackedScene::6670246924963645904::1714067697::0::1::::<><>::
-game_map.gd::GDScript::-1::1714067697::0::1::::<>Node2D<>::
+::res://::1714339828
+fighting.tscn::PackedScene::5511029535592424504::1714068936::0::1::::<><>::
+gameLevel.tscn::PackedScene::8239518181864298535::1714339788::0::1::::<><>::uid://bxva386a8hq3j::::res://Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Foozle_2DT0014_Scallywag_WaterAndIslands/Water and Island tiles.png<>uid://d0xcaoia27tps::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Ships Mockup.png<>uid://dp37aqsnk0y7g::::res://player.tscn<>uid://25b6l75dsiyy::::res://island_1.tscn<>uid://d4cxgom0dx3nd::::res://island_2.tscn<>uid://bscmf4l3jboys::::res://island_3.tscn<>uid://biy1epts6xytp::::res://island_4.tscn<>uid://bn0pv7u5sbbar::::res://island_5.tscn<>uid://bf8oxh3iud11r::::res://rock.tscn
+game_map.gd::GDScript::-1::1714339717::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::5945105817301676180::1711644533::1714067732::1::::<><>::
 island_1.gd::GDScript::-1::1714067697::0::1::::<>StaticBody2D<>::
-island_1.tscn::PackedScene::1957146816010868072::1714068383::0::1::::<><>::res://island_1.gd<>uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_2.tscn::PackedScene::9200275232692806325::1714068384::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_3.tscn::PackedScene::3654687699022803538::1714068385::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_4.tscn::PackedScene::2999063101944074909::1714068385::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_5.tscn::PackedScene::3351435064432966397::1714068386::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
-island_exploration.tscn::PackedScene::5367558678653881323::1714068383::0::1::::<><>::res://scroll.gdshader<>uid://ccpecucwrmy8r::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/island background.jpg<>uid://cc3wxdyv68f0r::::res://pirate.tscn
+island_1.tscn::PackedScene::1957146816010868072::1714068561::0::1::::<><>::res://island_1.gd<>uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_2.tscn::PackedScene::9200275232692806325::1714068562::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_3.tscn::PackedScene::3654687699022803538::1714068563::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_4.tscn::PackedScene::2999063101944074909::1714068563::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_5.tscn::PackedScene::3351435064432966397::1714068564::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+island_exploration.gd::GDScript::-1::1714339717::0::1::::<>Control<>::
+island_exploration.tscn::PackedScene::5367558678653881323::1714339717::0::1::::<><>::res://scroll.gdshader<>uid://ccpecucwrmy8r::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/island background.jpg<>uid://cc3wxdyv68f0r::::res://pirate.tscn
 main_menu_script.gd::GDScript::-1::1714067697::0::1::::<>Control<>::
-pirate.tscn::PackedScene::4972398674518845839::1714068386::0::1::::<><>::uid://dbou0iok4b5q4::::res://Run-6frm.png
+pirate.gd::GDScript::-1::1714339717::0::1::::<>Node2D<>::
+pirate.tscn::PackedScene::4972398674518845839::1714339717::0::1::::<><>::res://pirate.gd<>uid://dbou0iok4b5q4::::res://Run-6frm.png
 Player.gd::GDScript::-1::1714067696::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::8271841095317106606::1714068386::0::1::::<><>::uid://v6hdv86lbk5d::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png
+player.tscn::PackedScene::8271841095317106606::1714339717::0::1::::<><>::uid://rllv80wln2m::::res://SFX/Boat-Idle-SFX.wav<>uid://v6hdv86lbk5d::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png<>uid://c2kf1ppil0m2c::::res://SFX/Boat-Moving-SFX.wav
 playerscript.gd::GDScript::-1::1714067296::0::1::::<>CharacterBody2D<>::
 player_ship.tscn::PackedScene::7633523896768783854::1714067296::0::1::::<><>::res://playerscript.gd<>uid://bi07hyqipkpm2::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://h0xp42rnuqex::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://dc73d7beylvtv::::res://Foozle_2DT0013_Scallywag_Ships/Foozle_2DT0013_Scallywag_Ships/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png<>uid://bndm2q72gujh::::res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://c65guu80jfoan::::res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png<>uid://d2aih8r6yjmce::::res://Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://8i6lvc5ksi4g::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://dati5ou8f7nig::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://d3jyveky1o1ij::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png<>uid://drrw53o2w7l8d::::res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png<>uid://ca85iyndpeyyf::::res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png<>uid://bdwwanvg23887::::res://Boat-animation.png.png/Boat-animation.png.png/7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-2.png
-rock.tscn::PackedScene::2806380890234112325::1714068387::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
+rock.tscn::PackedScene::2806380890234112325::1714068565::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
 Run-6frm.png::CompressedTexture2D::7259611610284369613::1714067696::1714067696::1::::<><>::
-scroll.gdshader::Shader::-1::1714068387::0::1::::<><>::
+scroll.gdshader::Shader::-1::1714339500::0::1::::<><>::
 ::res://Boat-animation.png.png/::1712083592
 7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-0.png::CompressedTexture2D::97230779283566057::1712083494::1712083495::1::::<><>::
 7abfe389823b47dfe95ea6c8505bc4d7AdTNQmEHNWktHtnd-1.png::CompressedTexture2D::9054860826778811232::1712083494::1712083495::1::::<><>::
@@ -92,6 +94,9 @@ Pirate 5.wav::AudioStreamWAV::2924706176110607::1711657931::1711657938::1::::<><
 Pirate 6.wav::AudioStreamWAV::2112459981258280065::1711657931::1711657942::1::::<><>::
 Pirate 7.wav::AudioStreamWAV::2624415623453743838::1711657931::1711657940::1::::<><>::
 Pirate 8.wav::AudioStreamWAV::3261721149422274935::1711657931::1711657941::1::::<><>::
+::res://SFX/::1714339717
+Boat-Idle-SFX.wav::AudioStreamWAV::35783107607033198::1714339716::1714339716::1::::<><>::
+Boat-Moving-SFX.wav::AudioStreamWAV::6688934750160532736::1714339717::1714339717::1::::<><>::
 ::res://Sunny-land-assets-files/::1714067697
 public-license.txt::TextFile::-1::1714067697::0::1::::<><>::
 ::res://Sunny-land-assets-files/code/::1714067697
