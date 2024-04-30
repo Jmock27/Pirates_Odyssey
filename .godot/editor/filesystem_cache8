@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714496728
+::res://::1714496772
 enemy.gd::GDScript::-1::1714496139::0::1::::<>CharacterBody2D<>::
 enemy.tscn::PackedScene::3488724747308071759::1714496723::0::1::::<><>::res://enemy.gd<>uid://d2ogfi56nt6p6::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-1.png<>uid://lfvweyx3lgdq::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-1.png<>uid://cy4kgse7ba7lk::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-2.png<>uid://kvjw5ulrgwpm::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-3.png<>uid://8306kuylqsfq::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-2.png<>uid://hxeia38lphda::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-4.png<>uid://bc50cdwd6hcts::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-3.png<>uid://bm5xvno3g7xpp::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-5.png<>uid://df6rn8w2c8ieb::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-4.png<>uid://blnqnwkcik5di::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-5.png<>uid://16osuj1t4bbe::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-6.png<>uid://cyi23f4v1xum2::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-6.png
 fighting.tscn::PackedScene::5511029535592424504::1714068936::0::1::::<><>::
@@ -21,13 +21,13 @@ main_menu_script.gd::GDScript::-1::1714067697::0::1::::<>Control<>::
 pirate.gd::GDScript::-1::1714495166::0::1::::<>CharacterBody2D<>::
 pirate.tscn::PackedScene::4972398674518845839::1714496722::0::1::::<><>::res://pirate.gd<>uid://dbou0iok4b5q4::::res://Run-6frm.png<>uid://bcetes2x7rnah::::res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate by seartsy/Death-4frm.png<>uid://cityo8gasuvn0::::res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate by seartsy/Atk1-6frm.png<>uid://dp7obdq3ugupj::::res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate by seartsy/Idle-5frm.png<>uid://ps1mk2fu5gfk::::res://Pirate Music Pack/Pirate Music Pack/mp3/107624__stintx__running02.wav
 pirate_exploration.gd::GDScript::-1::1714494255::0::1::::<>Node2D<>::
-pirate_exploration.tscn::PackedScene::3220789041452563221::1714496722::0::1::::<><>::res://pirate_exploration.gd<>uid://qkv31l660tq5::::res://Jungle Asset Pack/Jungle Asset Pack/jungle tileset/jungle tileset.png<>uid://cc3wxdyv68f0r::::res://pirate.tscn<>uid://qyjf3gpepxr2::::res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 6.mp3<>uid://cslychic4lkp1::::res://Sunny-land-assets-files/PNG/environment/layers/back.png<>uid://bc3cgxh3s4vnp::::res://Sunny-land-assets-files/PNG/Item 3-1.png.png<>uid://bpx710vq4rsdj::::res://enemy.tscn
+pirate_exploration.tscn::PackedScene::3220789041452563221::1714496772::0::1::::<><>::res://pirate_exploration.gd<>uid://qkv31l660tq5::::res://Jungle Asset Pack/Jungle Asset Pack/jungle tileset/jungle tileset.png<>uid://cc3wxdyv68f0r::::res://pirate.tscn<>uid://qyjf3gpepxr2::::res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 6.mp3<>uid://cslychic4lkp1::::res://Sunny-land-assets-files/PNG/environment/layers/back.png<>uid://bc3cgxh3s4vnp::::res://Sunny-land-assets-files/PNG/Item 3-1.png.png
 PlayAgainButton.gd::GDScript::-1::1714494254::0::1::::<>Button<>::
 playerscript.gd::GDScript::-1::1714067296::0::1::::<>CharacterBody2D<>::
 QuitButton.gd::GDScript::-1::1714494254::0::1::::<>Button<>::
 rock.tscn::PackedScene::2806380890234112325::1714496724::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
 Run-6frm.png::CompressedTexture2D::7259611610284369613::1714067696::1714067696::1::::<><>::
-scroll.gdshader::Shader::-1::1714496728::0::1::::<><>::
+scroll.gdshader::Shader::-1::1714496772::0::1::::<><>::
 Ship.gd::GDScript::-1::1714067696::0::1::::<>CharacterBody2D<>::
 Ship.tscn::PackedScene::8271841095317106606::1714496722::0::1::::<><>::uid://rllv80wln2m::::res://SFX/Boat-Idle-SFX.wav<>uid://v6hdv86lbk5d::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png<>uid://c2kf1ppil0m2c::::res://SFX/Boat-Moving-SFX.wav
 ::res://Boat-animation.png.png/::1712083592
