@@ -1,10 +1,11 @@
-[gd_scene load_steps=29 format=3 uid="uid://cc3wxdyv68f0r"]
+[gd_scene load_steps=30 format=3 uid="uid://cc3wxdyv68f0r"]
 
 [ext_resource type="Script" path="res://pirate.gd" id="1_7f05b"]
 [ext_resource type="Texture2D" uid="uid://dbou0iok4b5q4" path="res://Run-6frm.png" id="1_wwnw4"]
 [ext_resource type="Texture2D" uid="uid://bcetes2x7rnah" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate by seartsy/Death-4frm.png" id="2_6egp5"]
 [ext_resource type="Texture2D" uid="uid://cityo8gasuvn0" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate by seartsy/Atk1-6frm.png" id="3_42n1q"]
 [ext_resource type="Texture2D" uid="uid://dp7obdq3ugupj" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate by seartsy/Idle-5frm.png" id="4_77600"]
+[ext_resource type="AudioStream" uid="uid://ps1mk2fu5gfk" path="res://Pirate Music Pack/Pirate Music Pack/mp3/107624__stintx__running02.wav" id="6_0i5j1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cavdd"]
 atlas = ExtResource("2_6egp5")
@@ -187,9 +188,13 @@ script = ExtResource("1_7f05b")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(509, 170)
 sprite_frames = SubResource("SpriteFrames_qyk5b")
-animation = &"fight"
-frame_progress = 0.495223
+animation = &"run"
+frame_progress = 0.33595
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(507, 182)
 shape = SubResource("CapsuleShape2D_6frq5")
+
+[node name="WalkingSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_0i5j1")
+volume_db = 1.239

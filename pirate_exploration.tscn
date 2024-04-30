@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://bl5f6pihnifpt"]
+[gd_scene load_steps=14 format=3 uid="uid://bl5f6pihnifpt"]
 
 [ext_resource type="Script" path="res://pirate_exploration.gd" id="1_1t2v7"]
 [ext_resource type="Texture2D" uid="uid://qkv31l660tq5" path="res://Jungle Asset Pack/Jungle Asset Pack/jungle tileset/jungle tileset.png" id="1_6hsdr"]
 [ext_resource type="PackedScene" uid="uid://cc3wxdyv68f0r" path="res://pirate.tscn" id="2_1v5ws"]
+[ext_resource type="AudioStream" uid="uid://qyjf3gpepxr2" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 6.mp3" id="4_nnhb0"]
 [ext_resource type="Texture2D" uid="uid://cslychic4lkp1" path="res://Sunny-land-assets-files/PNG/environment/layers/back.png" id="4_xrh74"]
 [ext_resource type="Texture2D" uid="uid://bc3cgxh3s4vnp" path="res://Sunny-land-assets-files/PNG/Item 3-1.png.png" id="5_1254a"]
 
@@ -1674,6 +1675,11 @@ limit_left = 0
 limit_top = 320
 limit_right = 1728
 limit_bottom = 626
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
+stream = ExtResource("4_nnhb0")
+volume_db = -1.238
+autoplay = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

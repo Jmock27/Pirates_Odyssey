@@ -17,3 +17,7 @@ res://pirate_exploration.gd
 res://PlayAgainButton.gd
 res://QuitButton.gd
 res://game_over.tscn
+res://game_map.gd
+res://island_1.gd
+res://main_menu.gd
+res://playerscript.gd
