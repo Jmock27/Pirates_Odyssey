@@ -2,11 +2,9 @@ res://main_menu.tscn
 res://scroll.gdshader
 res://gameLevel.tscn
 res://pirate.tscn
-res://player.tscn
+res://Ship.tscn
 res://pirate_exploration.tscn
 res://rock.tscn
-res://Ship.tscn
-res://main_menu.gd
 res://island_1.tscn
 res://island_2.tscn
 res://island_3.tscn
