@@ -12,3 +12,7 @@ res://island_3.tscn
 res://island_4.tscn
 res://island_5.tscn
 res://game_over.tscn
+res://game_map.gd
+res://island_1.gd
+res://main_menu.gd
+res://playerscript.gd

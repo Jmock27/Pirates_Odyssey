@@ -41,6 +41,7 @@ func _physics_process(delta):
 	else:
 		$AnimatedSprite2D.play("idle")
 	
+	
 	if velocity.x<0:
 		$AnimatedSprite2D.flip_h = true;
 	elif velocity.x>0:
@@ -51,12 +52,6 @@ func _physics_process(delta):
 	if Input.is_action_pressed("activate_hitbox") and not is_attacking:
 		is_attacking = true
 	
-	if is_attacking:
-		$Hitbox.visible = true
-		attack_duration -= delta
-		if attack_duration <= 0:
-			is_attacking = false
-			attack_duration = 0.3
 	
 	move_and_slide()
 
