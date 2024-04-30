@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://b371h0j3kmjm7"]
+
+[ext_resource type="FontFile" uid="uid://dsolhv3c5pn50" path="res://Sunny-land-assets-files/PNG/Share_Tech_Mono/ShareTechMono-Regular.ttf" id="1_7emrt"]
+[ext_resource type="Script" path="res://PlayAgainButton.gd" id="2_t8500"]
+[ext_resource type="Script" path="res://QuitButton.gd" id="3_4bami"]
+
+[node name="Game Over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 440.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.482353, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_left = 361.0
+offset_top = 211.0
+offset_right = 469.0
+offset_bottom = 251.0
+scale = Vector2(6.0417, 5.84994)
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_7emrt")
+theme_override_font_sizes/font_size = 22
+text = "GAME OVER"
+horizontal_alignment = 2
+text_direction = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = 88.0
+offset_right = 12.0
+offset_bottom = 154.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.79805, 2.09577)
+
+[node name="PlayAgainButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Play Again"
+script = ExtResource("2_t8500")
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit
+"
+script = ExtResource("3_4bami")
+
+[connection signal="pressed" from="VBoxContainer/PlayAgainButton" to="VBoxContainer/PlayAgainButton" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="VBoxContainer/QuitButton" method="_on_pressed"]
