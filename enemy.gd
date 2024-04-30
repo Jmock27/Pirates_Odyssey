@@ -1,16 +1,14 @@
 extends CharacterBody2D
 
-var speed = 300
-var health = 10
-var direction = -1
+@export var speed = 100
+var direction = -1;
 
+# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
-	
+	pass # Replace with function body.
 
-
-
-func _process(delta):
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
 	velocity.x = speed * direction
 	
 	if(direction == -1):
@@ -19,16 +17,11 @@ func _process(delta):
 		$AnimatedSprite2D.flip_h = true
 
 	move_and_slide()
+	
+	if $RayCast2D.is_colliding()==false:
+		direction *= -1
+		$RayCast2D.position.x *= -1
 
 func _on_collision_checker_body_entered(body):
 	print("_on_collision_checker_body_entered")
 	body.hit()
-
-
-func take_damage(damage):
-	health -= damage
-	if health <= 0:
-		die()
-
-func die():
-	queue_free()
