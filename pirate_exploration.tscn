@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bl5f6pihnifpt"]
+[gd_scene load_steps=15 format=3 uid="uid://bl5f6pihnifpt"]
 
 [ext_resource type="Script" path="res://pirate_exploration.gd" id="1_1t2v7"]
 [ext_resource type="Texture2D" uid="uid://qkv31l660tq5" path="res://Jungle Asset Pack/Jungle Asset Pack/jungle tileset/jungle tileset.png" id="1_6hsdr"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://qyjf3gpepxr2" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 6.mp3" id="4_nnhb0"]
 [ext_resource type="Texture2D" uid="uid://cslychic4lkp1" path="res://Sunny-land-assets-files/PNG/environment/layers/back.png" id="4_xrh74"]
 [ext_resource type="Texture2D" uid="uid://bc3cgxh3s4vnp" path="res://Sunny-land-assets-files/PNG/Item 3-1.png.png" id="5_1254a"]
+[ext_resource type="PackedScene" uid="uid://bpx710vq4rsdj" path="res://Enemy.tscn" id="7_phrkt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wm4k8"]
 texture = ExtResource("1_6hsdr")
@@ -1763,6 +1764,11 @@ collision_layer = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Finish Area"]
 position = Vector2(1608, 476)
 shape = SubResource("RectangleShape2D_lqdxv")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="enemy" parent="Node2D" instance=ExtResource("7_phrkt")]
+position = Vector2(1150, 473)
 
 [connection signal="body_entered" from="CanvasLayer/Fall Area" to="CharacterBody2D" method="_on_fall_area_body_entered"]
 [connection signal="body_entered" from="CanvasLayer/Finish Area" to="CharacterBody2D" method="_on_finish_area_body_entered"]

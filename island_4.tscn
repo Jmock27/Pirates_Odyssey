@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://biy1epts6xytp"]
+[gd_scene load_steps=6 format=3 uid="uid://biy1epts6xytp"]
 
+[ext_resource type="Script" path="res://island_4.gd" id="1_5qe2i"]
 [ext_resource type="Texture2D" uid="uid://c7vir4oclpsha" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png" id="1_uuhy3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p3cww"]
@@ -1474,6 +1475,7 @@ sources/0 = SubResource("TileSetAtlasSource_p3cww")
 radius = 468.517
 
 [node name="island 4" type="Area2D"]
+script = ExtResource("1_5qe2i")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_q6vks")
