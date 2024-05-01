@@ -1,0 +1,96 @@
+[gd_scene load_steps=17 format=3 uid="uid://bpx710vq4rsdj"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_dho6k"]
+[ext_resource type="Texture2D" uid="uid://d2ogfi56nt6p6" path="res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-1.png" id="1_qrpwk"]
+[ext_resource type="Texture2D" uid="uid://lfvweyx3lgdq" path="res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-1.png" id="2_eomu7"]
+[ext_resource type="Texture2D" uid="uid://cy4kgse7ba7lk" path="res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-2.png" id="2_f0k30"]
+[ext_resource type="Texture2D" uid="uid://kvjw5ulrgwpm" path="res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-3.png" id="3_0wcpy"]
+[ext_resource type="Texture2D" uid="uid://8306kuylqsfq" path="res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-2.png" id="3_xbmpe"]
+[ext_resource type="Texture2D" uid="uid://hxeia38lphda" path="res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-4.png" id="4_3x7py"]
+[ext_resource type="Texture2D" uid="uid://bc50cdwd6hcts" path="res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-3.png" id="4_yeofw"]
+[ext_resource type="Texture2D" uid="uid://bm5xvno3g7xpp" path="res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-5.png" id="5_6b3hc"]
+[ext_resource type="Texture2D" uid="uid://df6rn8w2c8ieb" path="res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-4.png" id="5_n7em0"]
+[ext_resource type="Texture2D" uid="uid://blnqnwkcik5di" path="res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-5.png" id="6_hird5"]
+[ext_resource type="Texture2D" uid="uid://16osuj1t4bbe" path="res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-6.png" id="6_lkv3t"]
+[ext_resource type="Texture2D" uid="uid://cyi23f4v1xum2" path="res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-6.png" id="7_gxdmo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o22b8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_eomu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xbmpe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yeofw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n7em0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hird5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gxdmo")
+}],
+"loop": true,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qrpwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f0k30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0wcpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3x7py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6b3hc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lkv3t")
+}],
+"loop": true,
+"name": &"run",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2xj1l"]
+size = Vector2(20, 369.825)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ot7o6"]
+size = Vector2(30, 20)
+
+[node name="enemy" type="CharacterBody2D"]
+collision_layer = 32
+collision_mask = 2
+script = ExtResource("1_dho6k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_o22b8")
+animation = &"run"
+frame_progress = 0.0859659
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-2, 4)
+scale = Vector2(1.50839, -0.0540797)
+shape = SubResource("RectangleShape2D_2xj1l")
+
+[node name="CollisionChecker" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionChecker"]
+position = Vector2(-2, 4)
+shape = SubResource("RectangleShape2D_ot7o6")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(-16, 0)
+collision_mask = 2

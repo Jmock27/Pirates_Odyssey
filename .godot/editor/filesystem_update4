@@ -1,12 +1,15 @@
-res://main_menu.tscn
+res://pirate_exploration.tscn
 res://scroll.gdshader
+res://enemy.gd
+res://main_menu.tscn
 res://gameLevel.tscn
 res://pirate.tscn
 res://Ship.tscn
-res://pirate_exploration.tscn
+res://enemy.tscn
 res://rock.tscn
 res://island_1.tscn
 res://island_2.tscn
 res://island_3.tscn
 res://island_4.tscn
 res://island_5.tscn
+res://game_over.tscn
