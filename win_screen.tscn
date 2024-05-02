@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4ch1a6kseo7k"]
+
+[ext_resource type="Texture2D" uid="uid://cslychic4lkp1" path="res://Sunny-land-assets-files/PNG/environment/layers/back.png" id="1_o44u4"]
+[ext_resource type="FontFile" uid="uid://dsolhv3c5pn50" path="res://Sunny-land-assets-files/PNG/Share_Tech_Mono/ShareTechMono-Regular.ttf" id="2_igaps"]
+[ext_resource type="Script" path="res://replay_button.gd" id="3_quvv2"]
+[ext_resource type="Script" path="res://back_to_ship_button.gd" id="4_50whx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oo3or"]
+font = ExtResource("2_igaps")
+font_size = 75
+font_color = Color(0, 0, 0, 1)
+outline_size = 3
+outline_color = Color(0.501961, 0.0941176, 0.823529, 1)
+
+[node name="win_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.0881, 1.33387)
+texture = ExtResource("1_o44u4")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -102.0
+offset_right = -6.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "You Have Beat The Stage!"
+label_settings = SubResource("LabelSettings_oo3or")
+uppercase = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 506.0
+offset_top = 499.0
+offset_right = 635.0
+offset_bottom = 565.0
+scale = Vector2(1.80959, 1.72)
+
+[node name="replay_button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Replay Level"
+script = ExtResource("3_quvv2")
+
+[node name="back_to_ship_button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Go Back to Ship"
+script = ExtResource("4_50whx")
+
+[connection signal="pressed" from="VBoxContainer/replay_button" to="VBoxContainer/replay_button" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/back_to_ship_button" to="VBoxContainer/back_to_ship_button" method="_on_pressed"]

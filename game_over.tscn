@@ -1,8 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://b371h0j3kmjm7"]
+[gd_scene load_steps=6 format=3 uid="uid://b371h0j3kmjm7"]
 
 [ext_resource type="FontFile" uid="uid://dsolhv3c5pn50" path="res://Sunny-land-assets-files/PNG/Share_Tech_Mono/ShareTechMono-Regular.ttf" id="1_7emrt"]
+[ext_resource type="Texture2D" uid="uid://cslychic4lkp1" path="res://Sunny-land-assets-files/PNG/environment/layers/back.png" id="1_fd4rn"]
 [ext_resource type="Script" path="res://PlayAgainButton.gd" id="2_t8500"]
 [ext_resource type="Script" path="res://QuitButton.gd" id="3_4bami"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6agdy"]
+font = ExtResource("1_7emrt")
+font_size = 75
+font_color = Color(0, 0, 0, 1)
+outline_size = 3
+outline_color = Color(0.501961, 0.0941176, 0.823529, 1)
 
 [node name="Game Over" type="Control"]
 layout_mode = 3
@@ -12,24 +20,32 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 440.0
+offset_right = 434.0
 offset_bottom = 360.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.482353, 0, 0, 1)
+scale = Vector2(0.76, 0.68)
+texture = ExtResource("1_fd4rn")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-layout_mode = 0
-offset_left = 361.0
-offset_top = 211.0
-offset_right = 469.0
-offset_bottom = 251.0
-scale = Vector2(6.0417, 5.84994)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -513.0
+offset_top = -241.0
+offset_right = -27.0
+offset_bottom = -127.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.1617, 2.36994)
 
 [node name="Label" type="Label" parent="CenterContainer"]
 layout_mode = 2
@@ -37,22 +53,24 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_7emrt")
 theme_override_font_sizes/font_size = 22
 text = "GAME OVER"
+label_settings = SubResource("LabelSettings_6agdy")
 horizontal_alignment = 2
+vertical_alignment = 1
 text_direction = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -76.0
-offset_top = 88.0
-offset_right = 12.0
-offset_bottom = 154.0
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = -206.0
+offset_right = -32.9999
+offset_bottom = -140.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 scale = Vector2(2.79805, 2.09577)
 
 [node name="PlayAgainButton" type="Button" parent="VBoxContainer"]

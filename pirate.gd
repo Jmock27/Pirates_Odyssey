@@ -1,6 +1,6 @@
 extends CharacterBody2D
 @export var speed = 200.0
-@export var jump_velocity = -300.0
+@export var jump_velocity = -350.0
 @export var score = 0
 @export var lives = 5
 
@@ -29,7 +29,9 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		$JumpSFX.play()
 		velocity.y = jump_velocity
+	
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * speed
@@ -71,7 +73,7 @@ func _on_fall_area_body_entered(_body):
 	call_deferred("game_over")
 
 func scene_change():
-	get_tree().change_scene_to_file("res://gameLevel.tscn")
+	get_tree().change_scene_to_file("res://win_screen.tscn")
 
 func game_over():
 	get_tree().change_scene_to_file("res://game_over.tscn")
