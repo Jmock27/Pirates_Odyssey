@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714525529
+::res://::1714525608
 enemy.gd::GDScript::-1::1714525495::0::1::::<>CharacterBody2D<>::
 enemy.tscn::PackedScene::3488724747308071759::1714525495::0::1::::<><>::res://enemy.gd<>uid://d2ogfi56nt6p6::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-1.png<>uid://lfvweyx3lgdq::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-1.png<>uid://cy4kgse7ba7lk::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-2.png<>uid://kvjw5ulrgwpm::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-3.png<>uid://8306kuylqsfq::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-2.png<>uid://hxeia38lphda::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-4.png<>uid://bc50cdwd6hcts::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-3.png<>uid://bm5xvno3g7xpp::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-5.png<>uid://df6rn8w2c8ieb::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-4.png<>uid://blnqnwkcik5di::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-5.png<>uid://16osuj1t4bbe::::res://Sunny-land-assets-files/PNG/sprites/opossum/opossum-6.png<>uid://cyi23f4v1xum2::::res://Sunny-land-assets-files/PNG/sprites/enemy-death/enemy-death-6.png
 fighting.tscn::PackedScene::5511029535592424504::1714361164::0::1::::<><>::
@@ -27,7 +27,7 @@ playerscript.gd::GDScript::-1::1714271112::0::1::::<>CharacterBody2D<>::
 QuitButton.gd::GDScript::-1::1714525495::0::1::::<>Button<>::
 rock.tscn::PackedScene::2806380890234112325::1714444964::0::1::::<><>::uid://c7vir4oclpsha::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/tiles_sheet.png
 Run-6frm.png::CompressedTexture2D::7259611610284369613::1714361163::1714361163::1::::<><>::
-scroll.gdshader::Shader::-1::1714444969::0::1::::<><>::
+scroll.gdshader::Shader::-1::1714525579::0::1::::<><>::
 Ship.gd::GDScript::-1::1714444841::0::1::::<>CharacterBody2D<>::
 Ship.tscn::PackedScene::8271841095317106606::1714444963::0::1::::<><>::uid://rllv80wln2m::::res://SFX/Boat-Idle-SFX.wav<>uid://v6hdv86lbk5d::::res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/Right.png<>uid://c2kf1ppil0m2c::::res://SFX/Boat-Moving-SFX.wav
 ::res://Boat-animation.png.png/::1712113982
