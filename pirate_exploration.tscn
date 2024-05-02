@@ -6,7 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://qyjf3gpepxr2" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate 6.mp3" id="4_nnhb0"]
 [ext_resource type="Texture2D" uid="uid://cslychic4lkp1" path="res://Sunny-land-assets-files/PNG/environment/layers/back.png" id="4_xrh74"]
 [ext_resource type="Texture2D" uid="uid://bc3cgxh3s4vnp" path="res://Sunny-land-assets-files/PNG/Item 3-1.png.png" id="5_1254a"]
-[ext_resource type="PackedScene" uid="uid://bpx710vq4rsdj" path="res://Enemy.tscn" id="7_phrkt"]
+[ext_resource type="PackedScene" uid="uid://bpx710vq4rsdj" path="res://enemy.tscn" id="7_phrkt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wm4k8"]
 texture = ExtResource("1_6hsdr")
