@@ -1,16 +1,6 @@
 extends Node2D
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-
-
-func _process(delta):
-	pass
-	
-
-
 func _on_body_entered(body):
 	call_deferred("change_scene")
 

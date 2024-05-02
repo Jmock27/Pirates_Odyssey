@@ -6,6 +6,13 @@ res://Ship.tscn
 res://pirate_exploration.tscn
 res://game_over.tscn
 res://win_screen.tscn
-res://pirate.gd
-res://PlayAgainButton.gd
-res://replay_button.gd
+res://island_2.tscn
+res://island_1.tscn
+res://island_5.tscn
+res://island_1.gd
+res://island_2.gd
+res://island_3.gd
+res://island_4.gd
+res://island_5.gd
+res://island_3.tscn
+res://island_4.tscn

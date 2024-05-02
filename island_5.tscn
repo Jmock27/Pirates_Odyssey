@@ -1487,3 +1487,5 @@ layer_0/tile_data = PackedInt32Array(1703955, 983040, 17, 1703956, 983040, 17, 1
 visible = false
 position = Vector2(472, 243)
 shape = SubResource("CapsuleShape2D_hp4jb")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

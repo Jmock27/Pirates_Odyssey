@@ -1489,3 +1489,5 @@ layer_1/tile_data = PackedInt32Array()
 visible = false
 position = Vector2(645, 300)
 shape = SubResource("CircleShape2D_c51fo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

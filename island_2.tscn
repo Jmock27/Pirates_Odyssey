@@ -1476,6 +1476,7 @@ radius = 287.0
 height = 574.0
 
 [node name="Island 2" type="Area2D"]
+z_index = 1
 script = ExtResource("1_fuhfb")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1487,6 +1488,8 @@ layer_1/name = "Top"
 layer_1/tile_data = PackedInt32Array(458783, 524288, 13, 524319, 524288, 14, 393248, 589824, 12, 458784, 589824, 13, 524320, 589824, 14, 589856, 589824, 15, 393249, 655360, 12, 458785, 655360, 13, 524321, 655360, 14, 589857, 655360, 15, 458786, 720896, 13, 524322, 720896, 14)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
+z_index = 1
 position = Vector2(497, 235)
 shape = SubResource("CapsuleShape2D_h0yrp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
