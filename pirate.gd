@@ -73,7 +73,7 @@ func _on_fall_area_body_entered(_body):
 	call_deferred("game_over")
 
 func scene_change():
-	get_tree().change_scene_to_file("res://gameLevel.tscn")
+	get_tree().change_scene_to_file("res://win_screen.tscn")
 
 func game_over():
 	get_tree().change_scene_to_file("res://game_over.tscn")

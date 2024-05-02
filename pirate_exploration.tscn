@@ -1726,7 +1726,6 @@ clip_contents = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 texture = ExtResource("5_1254a")
-expand_mode = 1
 stretch_mode = 6
 flip_h = true
 
