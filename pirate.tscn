@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cc3wxdyv68f0r"]
+[gd_scene load_steps=31 format=3 uid="uid://cc3wxdyv68f0r"]
 
 [ext_resource type="Script" path="res://pirate.gd" id="1_7f05b"]
 [ext_resource type="Texture2D" uid="uid://dbou0iok4b5q4" path="res://Run-6frm.png" id="1_wwnw4"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cityo8gasuvn0" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate by seartsy/Atk1-6frm.png" id="3_42n1q"]
 [ext_resource type="Texture2D" uid="uid://dp7obdq3ugupj" path="res://Pirate Music Pack/Pirate Music Pack/mp3/Pirate by seartsy/Idle-5frm.png" id="4_77600"]
 [ext_resource type="AudioStream" uid="uid://ps1mk2fu5gfk" path="res://Pirate Music Pack/Pirate Music Pack/mp3/107624__stintx__running02.wav" id="6_0i5j1"]
+[ext_resource type="AudioStream" uid="uid://baybgsmjss624" path="res://Boat-animation.png.png/Boat-animation.png.png/Boat-animation.png.png/350898__cabled_mess__jump_c_08.wav" id="7_geldr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cavdd"]
 atlas = ExtResource("2_6egp5")
@@ -192,9 +193,15 @@ animation = &"run"
 frame_progress = 0.33595
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(507, 182)
+position = Vector2(510, 176)
 shape = SubResource("CapsuleShape2D_6frq5")
 
 [node name="WalkingSFX" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_0i5j1")
 volume_db = 1.239
+
+[node name="JumpSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_geldr")
+volume_db = 1.238
+pitch_scale = 1.1
+mix_target = 2

@@ -4,11 +4,8 @@ res://gameLevel.tscn
 res://pirate.tscn
 res://Ship.tscn
 res://pirate_exploration.tscn
-res://enemy.tscn
-res://rock.tscn
-res://island_1.tscn
-res://island_2.tscn
-res://island_3.tscn
-res://island_4.tscn
-res://island_5.tscn
 res://game_over.tscn
+res://win_screen.tscn
+res://pirate.gd
+res://PlayAgainButton.gd
+res://replay_button.gd
